@@ -1,0 +1,9 @@
+@import "../../../../../scss/base/base";
+@import "../../../../../scss/base/variables";
+
+:host {
+  strong {
+    font-size: rem-calc(25);
+    color: $red;
+  }
+}

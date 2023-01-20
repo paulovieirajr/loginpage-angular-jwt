@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  height: 100vh;
+  background: url("~/src/assets/bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Function to calc rem
+@function rem-calc($size) {
+  $base-font-size: 16;
+  $value: calc($size / $base-font-size);
+  @return $value + rem;
+}

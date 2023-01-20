@@ -1,0 +1,18 @@
+@import "../base/base";
+
+.btn-red {
+  background-color: $red;
+  color: $white;
+  border-radius: rem-calc(10);
+  width: 100%;
+  height: rem-calc(60);
+  margin: rem-calc(25) 0 !important;
+  font-size: rem-calc(18);
+  cursor: pointer;
+  border: none;
+
+  &:disabled {
+    cursor: no-drop;
+    background: darken($color: $red, $amount: 20);
+  }
+}
